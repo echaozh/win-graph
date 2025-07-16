@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>完美渐变Win贡献图</title>
+    <title>The Perfect Win Graph</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -71,30 +71,32 @@
 </head>
 <body>
     <div class="container">
-        <h2>完美渐变Win贡献图</h2>
+        <h2>The Perfect Win Graph</h2>
+        <h3>Do you thirst for winning? Win or claim to win and track the winning streaks!</h3>
+        <h3>Empowered by Deekseek</h3>
         
         <div class="controls">
             <div class="control-group">
-                <label for="probability">Win概率 (%):</label>
+                <label for="probability">Win Prob (%):</label>
                 <input type="number" id="probability" min="1" max="100" value="67">
             </div>
             
             <div class="control-group">
-                <label for="rows">行数:</label>
+                <label for="rows">Rows:</label>
                 <input type="number" id="rows" min="1" max="20" value="8">
             </div>
             
             <div class="control-group">
-                <label for="cols">列数:</label>
+                <label for="cols">Cols:</label>
                 <input type="number" id="cols" min="1" max="100" value="40">
             </div>
             
             <div class="control-group">
-                <label for="max-streak">黑色阈值(天):</label>
+                <label for="max-streak">Days to black:</label>
                 <input type="number" id="max-streak" min="1" max="20" value="7">
             </div>
             
-            <button onclick="generateGraph()">生成图表</button>
+            <button onclick="generateGraph()">Generate Graph</button>
         </div>
         
         <div class="graph" id="contribution-graph"></div>
